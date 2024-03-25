@@ -180,6 +180,124 @@ align-items: center;
     justify-content: space-between;
     align-items: center;
 }
+
+.qator{
+  margin-bottom: 20px;
+}
+.pic2{
+    animation: yur 7s linear infinite;
+   
+}
+
+@keyframes yur{
+100%{
+    transform: translateX(-1409px);
+}
+}
+.mnbbvcc{
+    text-align: center;
+}
+.karobka{
+    position: relative;
+}
+.karobka::after{
+    content: '';
+   left: 10%;
+    border-top: 30px solid #B9FF66;
+ top: 85%;
+  z-index: 1;
+   position: absolute;
+  
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+}
+.karobka::before{
+    content: '';
+   left: 10%;
+    border-top: 30px solid #191A23;
+ top: 83%;
+   position: absolute;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    z-index: 2;
+}
+.pans{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border-radius: 50%;
+    background-color:  #191A23;
+    margin-right: 10px;
+}
+.lpoi{
+    display: flex;
+    justify-content: space-between;
+}
+.minus{
+    order: 1;
+}
+.plakatcha{
+   order: 1;
+}
+.inpn{
+  
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        border: 0;
+        margin: -1px;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        clip: rect(0, 0, 0, 0);
+        overflow: hidden;
+    
+}
+.inpn:checked ~ .p11{
+    display: block;
+}
+.p11{
+    display: none;
+}
+.pans::after{
+    content: '';
+    position: absolute;
+inset: 0;
+    width: 17px;
+    background-color:#B9FF66;
+    height: 17px;
+    border-radius: 50%;
+    margin: auto;
+    transform: scale(3);
+ opacity: 0;
+ transition: 0.4s;
+}
+.inp1:checked ~ .pans::after{
+    display: block;
+transform: scale(1);
+opacity: 1;
+}
+.label1{
+    display: flex;
+    align-items: center;
+    width: 48%;
+}
+.inp1{
+   
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        border: 0;
+        margin: -1px;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        clip: rect(0, 0, 0, 0);
+        overflow: hidden;
+    
+}
 .item2{
     background-image: linear-gradient(#B9FF66,#B9FF66);
 }
@@ -399,6 +517,12 @@ justify-content: center;
     color: white;
     font-size: 24px;
 }
+.qaotr {
+    margin-top: 250px;
+}
+.poi0{
+    margin-bottom: 30px;
+}
 .lo{
     margin: 0px 10px;
 }
@@ -531,8 +655,40 @@ border-radius: 50%;
     font-size: 22px;
     color: rgba(255, 255, 255, 0.711);
 }
-.a11{
-    margin-left: 22px;
+.minus{
+    position: relative;
+}
+.minus::after{
+    width: 50%;
+    transform: translateY(10px);
+    height: 3px;
+    background-color: #191A23;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+  
+}
+.plakat{
+    width: 100%;
+}
+
+.inpp{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    margin: -1px;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+.karobka{
+    width: 300px;
 }
 @media(max-width:1100px){
     .ul1{
@@ -612,6 +768,12 @@ margin: 10px 0px;
     .lkjhg{
         padding: 40px;
     }
+    .karobka::before{
+        top: 46%;
+    }
+    .karobka::after{
+        top: 48%;
+    }
     .form1{
         width: 80%;
     }
@@ -629,7 +791,12 @@ margin: 10px 0px;
     .div_icon{
         display: none;
     }
-  
+    .karobka::before{
+        display: none;
+    }
+    .karobka::after{
+        display: none;
+    }
     .ost{
         width: 48%;
     }
@@ -777,6 +944,12 @@ margin: 10px 0px;
     }
     .lkjhg{
         padding: 10px 16px;
+    }
+    .icon1{
+        margin-right: 20px;
+    }
+    .icon2{
+        margin-left: 20px;
     }
     .li2{
         width: 30%;
