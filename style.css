@@ -923,7 +923,11 @@ margin: 10px 0px;
     .form1{
         width: 100%;
     }
-  
+  @keyframes yur {
+    100%{
+        transform: translateX(-700px);
+    }
+  }
 }
 @media(max-width:500px){
     .chap{
