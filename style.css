@@ -15,7 +15,6 @@ body{
     padding: 30px 70px 0px;
 }
 
-
 .header{
   
     display: flex;
@@ -695,6 +694,36 @@ border-radius: 50%;
     width: 100%;
 }
 
+.btn1{
+    padding: 14px 22px;
+    background-color: #191A23;
+    border-radius: 13px;
+    color: rgba(255, 255, 255, 0.747);
+    border: none;
+    font-family: sans-serif;
+    position: relative;
+ z-index: 44444;
+ 
+    transition: 0.4s;
+}
+.btn1:hover{
+    color: #292A32;
+}
+.btn1::after{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #B9FF66;
+    content: '';
+    left: 0;
+    top: 0;
+ z-index: -1;
+ transition: 0.4s;
+    border-radius: 13px;
+}
+.btn1:hover::after{
+    width: 100%;
+}
 .inpp{
     position: absolute;
     width: 1px;
@@ -711,7 +740,6 @@ border-radius: 50%;
 .karobka{
     width: 300px;
 }
-
 @media(max-width:1100px){
     .ul1{
         width: 100%;
@@ -1029,7 +1057,7 @@ margin: 10px 0px;
         padding: 10px 8px;
     }
     .tepaga{
-        padding: 8px 10px;
+        padding: 8px 9px;
     }
     .dddddddd{
         font-size: 18px;
